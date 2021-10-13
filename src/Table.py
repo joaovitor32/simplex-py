@@ -34,6 +34,10 @@ class Table:
         return self.tableau
 
     @classmethod
+    def _get_matrix(self) -> np.array:
+        return self.matrix
+
+    @classmethod
     def _set_matrix(self, matrix: np.array) -> None:
         self.matrix = matrix
 

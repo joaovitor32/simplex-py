@@ -1,3 +1,4 @@
+
 # the inclusion of the tests module is not meant to offer best practices for
 # testing in general, but rather to support the `find_packages` example in
 # setup.py that excludes installing the "tests" package
@@ -8,12 +9,12 @@ import sys
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.dirname(CURRENT_DIR))
 
-from Table import Table
-from Simplex import Simplex
-from unittest.mock import Mock
-import unittest
-import numpy as np
 import yaml
+import numpy as np
+import unittest
+from unittest.mock import Mock
+from Simplex import Simplex
+from Table import Table
 
 class TestSimple(unittest.TestCase):
 
@@ -45,11 +46,11 @@ class TestSimple(unittest.TestCase):
         simplex = Simplex(table, plot)
 
         simplex._calculate()
-        result = simplex.table._get_tableau()
+        result = simplex.table._get_matrix()
 
         round_result = np.round(result, 3)
         round_response = np.round(self.response, 3)
-        
+
         self.assertTrue((round_result == round_response).all())
         pass
 

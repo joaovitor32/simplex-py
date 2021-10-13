@@ -42,7 +42,7 @@ nesse momento as variáveis livres adicionadas são desconsideradas.
 ## To execute tests
 
 ```
-I - python3 ./src/__tests__/simplex.py 
+I - python3 -B ./src/__tests__/simplex.py 
 ```
 
 
