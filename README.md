@@ -1,6 +1,6 @@
 # Método Simplex em python
 
-Código em python do método simplex para busca operacional na forma padrão
+Código em python do método simplex para busca operacional na forma padrão para a matéria de programação linear do IPRJ ( Instituto Politécnico do Rio de Janeiro )
 
 ## Uso
 
