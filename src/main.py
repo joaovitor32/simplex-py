@@ -4,7 +4,7 @@ from Simplex.Plot import Plot
 from Tableau.SimplexTableau import SimplexTableau
 
 if __name__ == "__main__":
-    # The following linex contains the normal method
+    # The following linex that user pivoting method
     yaml_path = './src/data/simplex.yaml'
 
     plot = Plot(yaml_path)
@@ -16,7 +16,7 @@ if __name__ == "__main__":
     simplex._calculate()
     simplex.table._display_matrix()
 
-    # The following linex that user pivoting method
+    # The following linex contains the normal method
     yaml_path_tableau = './src/data/simplex-tableau.yaml'
 
     simplex_tableau = SimplexTableau(yaml_path_tableau)
