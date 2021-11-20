@@ -44,7 +44,7 @@ class Table:
     @classmethod
     def _display_matrix(self) -> None:
         columns = shutil.get_terminal_size().columns
-        print(f'{bcolors.TITLE} /*-------- Simplex operation result ---------*/\n {bcolors.ENDC}'.center(columns))
+        print(f'{bcolors.TITLE} /*-------- Simplex operation result - Tableau method ---------*/\n {bcolors.ENDC}'.center(columns))
 
         tabulated_matrix = tabulate(
             self.matrix, headers=self.title, tablefmt="pretty", stralign='center', numalign="center")

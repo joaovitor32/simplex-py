@@ -1,7 +1,7 @@
 import operator
 import numpy as np
-from Plot import Plot
-from Table import Table
+from Simplex.Plot import Plot
+from Simplex.Table import Table
 import numpy as np
 from scipy.spatial import ConvexHull
 import matplotlib.pyplot as plt
